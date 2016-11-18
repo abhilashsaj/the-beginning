@@ -1,0 +1,76 @@
+<html>
+<head>
+<link href="Shoppingcart1.css" rel="stylesheet" type="text/css">
+<title></title>
+<script>
+var x,a,h,c,z,j,sum;
+function quantity() {
+x=document.getElementById('Price1').value;
+a=document.getElementById('Price2').value;
+h=document.getElementById('Price3').value;
+c=25000*parseFloat(a);
+z=30000*parseFloat(x);
+j=28000*parseFloat(h);
+sum=c+z+j;
+document.getElementById('total').value=sum;
+}
+
+     
+</script>
+	</head>
+	<body>
+		<div id="header">
+			<p id="name">GoKart</p>
+			<a href="Register"><p id="loginreg">Register</p></a>
+			<a href="Login"><p id="loginreg">Log in</p></a>
+		</div>
+		<div class="left">
+		<br>
+		<p><span class="heading">Laptops</span>
+		<ol>
+		<li>Acer </li>
+		<li>Hp </li>	
+		<li>Dell </li>
+		</ol>	
+		</p>
+<br>
+<p><span class="heading">Mobiles</span>
+		<ol>
+		<li>Samsung </li>
+		<li>Apple </li>	
+		<li>Lenovo </li>
+		</ol>	
+		</p>
+		
+
+
+
+
+</div>
+		<div class="right">
+		<br>		
+		Products 
+		<table>
+		<tr> 		
+		<td> <img src="/home/likewise-open/AMRITAVIDYA/u316bca003/Downloads/Daftar-Harga-Laptop-Acer-Lengkap-Dan-Terbaru-Tahun-2016-1.jpg" /> <br> 			Acer Aspire v3 </td>
+		<td> <img src="/home/likewise-open/AMRITAVIDYA/u316bca003/Downloads/dell_inspiron_15_7000.jpg" /> <br> Dell Inspiron 15 
+		</td>
+		<td><img src="/home/likewise-open/AMRITAVIDYA/u316bca003/Downloads/HP PROBOOK 440 G2 -3.jpg" /> <br> Dell Inspiron 15 
+		</td>
+		</tr>
+		<tr>
+		<td> Price: Rs 25,000 &nbsp; &nbsp; Qty: <input type="text" id="Price1" value="0"> </td>
+		<td> Price: Rs 30,000 &nbsp; &nbsp; Qty: <input type="text" id="Price2" value="0"> </td>
+		<td> Price: Rs 28,000 &nbsp; &nbsp; Qty: <input type="text" id="Price3" value="0"> </td>
+		<tr> </tr> <tr> </tr> <tr> </tr> <tr> </tr>
+		<tr><th></th><th></th><th> <input type="button" onclick="quantity()" value="Total Amount">  <input type="text" id="total"></th></tr>
+		
+		</table>
+		
+		
+		</div>
+		<div id="footer">
+			<p>Powered By FOSS labs :P</p>
+		</div>
+	</body>
+</html>
